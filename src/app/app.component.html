@@ -3,12 +3,12 @@
     <h3>Login do Sistema</h3>
   </div>
   <div class="form-group">
-    <label for="user">Email:</label>
-    <input type="email" class="form-control" id="user" placeholder="Informe o UserName" required>
+    <label for="Login">Email:</label>
+    <input type="email" class="form-control" [(ngModel)] = "usuario.login" id="Login" name="Login" placeholder="Informe o UserName" required>
   </div>
   <div class="form-group">
-    <label for="user">Senha:</label>
-    <input type="password" class="form-control" id="user" placeholder="Informe a Senha" required>
+    <label for="senha">Senha:</label>
+    <input type="password" class="form-control" [(ngModel)] = "usuario.senha" id="senha"  name="senha" placeholder="Informe a Senha" required>
   </div>
-<button type="button" class="bnt btn-primary">Acessar</button>
+<button type="button" class="bnt btn-primary" (click)="login()" >Acessar</button>
 </form>
